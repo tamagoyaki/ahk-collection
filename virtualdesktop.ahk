@@ -1,6 +1,6 @@
-#
-# https://github.com/rcmdnk/windows/blob/master/AutoHotkey.ahk
-#
+;
+; https://github.com/rcmdnk/windows/blob/master/AutoHotkey.ahk
+;
 
 #InstallKeybdHook
 #UseHook
