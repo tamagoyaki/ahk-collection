@@ -8,3 +8,4 @@
 ; Virtual desktop
 ^+b::Send, #^{Left}
 ^+f::Send, #^{Right}
+^+Tab::Send, #+{Tab}
