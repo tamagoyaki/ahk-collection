@@ -19,10 +19,8 @@ applist=
 bash
 excel
 explorer
-firefox
-measure
 thunderbird
-word
+winword
 )
 
 ;
@@ -30,20 +28,16 @@ word
 ;
 applaunch(keyword)
 {
-    If keyword = firefox
-        browser("")
-    Else If keyword = thunderbird
+    If keyword = thunderbird
        	Run thunderbird
     Else If keyword = bash
-	Run C:\Users\matsuda\Documents\tools\cygwin\cygwin\bin\mintty.exe -i /Cygwin-Terminal.ico -
+	Run c:\Users\matsuda\AppData\Local\wsltty\bin\mintty.exe --WSL="Ubuntu" --configdir="c:\Users\matsuda\AppData\Local\wsltty" -~
     Else If keyword = excel
-        Run %A_ProgramFiles%\Microsoft Office 15\root\office15\EXCEL.EXE
+        Run %A_ProgramFiles%\Microsoft Office\root\office16\EXCEL.EXE
     Else If keyword = explorer
         Run explorer
-    Else If keyword = word
-    	Run %A_ProgramFiles%\Microsoft Office 15\root\office15\WINWORD.EXE
-    Else If keyword = measure
-    	Run C:\cygwin64\home\EPSON-USER\sandbox\NorMea\NorMea.exe
+    Else If keyword = winword
+    	Run %A_ProgramFiles%\Microsoft Office\root\office16\WINWORD.EXE
 }
 
 browser(url)
