@@ -17,6 +17,7 @@
 applist=
 (
 bash
+chrome
 excel
 explorer
 thunderbird
@@ -30,8 +31,10 @@ applaunch(keyword)
 {
     If keyword = thunderbird
        	Run thunderbird
+    Else If keyword = chrome
+    	Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
     Else If keyword = bash
-	Run c:\Users\matsuda\AppData\Local\wsltty\bin\mintty.exe --WSL="Ubuntu" --configdir="c:\Users\matsuda\AppData\Local\wsltty" -~
+	Run c:\Users\matsuda\AppData\Local\wsltty\bin\mintty.exe --WSL="Ubuntu" --configdir="c:\Users\matsuda\AppData\Roaming\wsltty" -~
     Else If keyword = excel
         Run %A_ProgramFiles%\Microsoft Office\root\office16\EXCEL.EXE
     Else If keyword = explorer
