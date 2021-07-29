@@ -20,6 +20,7 @@ bash
 chrome
 excel
 explorer
+firefox
 thunderbird
 winword
 )
@@ -41,6 +42,8 @@ applaunch(keyword)
         Run explorer
     Else If keyword = winword
     	Run %A_ProgramFiles%\Microsoft Office\root\office16\WINWORD.EXE
+    Else If keyword = firefox
+	Run %A_ProgramFiles%\Mozilla Firefox\firefox.exe
 }
 
 browser(url)
