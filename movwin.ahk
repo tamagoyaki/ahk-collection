@@ -1,5 +1,7 @@
 ; http://nanabit.net/blog/2008/07/16/ahk-window-move/
 
+SetWinDelay, 10
+
 ; Window Move
 WinMoveStep(XD,YD)
 {
@@ -7,7 +9,9 @@ WinMoveStep(XD,YD)
     WinGetPos,x,y,,,ahk_id %win_id%
     Step := 24
     x := x + (XD * Step)
+    x := Floor(x / Step) * Step
     y := y + (YD * Step)
+    y := Floor(y / Step) * Step
     WinMove,ahk_id %win_id%,,%x%,%y%
 }
 
