@@ -23,6 +23,8 @@ explorer
 firefox
 thunderbird
 winword
+workplace
+nas
 )
 
 ;
@@ -44,6 +46,10 @@ applaunch(keyword)
     	Run %A_ProgramFiles%\Microsoft Office\root\office16\WINWORD.EXE
     Else If keyword = firefox
 	Run %A_ProgramFiles%\Mozilla Firefox\firefox.exe
+    Else If keyword = workplace
+	Run explore c:\Users\chojyu1805/Desktop/workplace
+    Else If keyword = nas
+	Run explore "\\192.168.0.114\êiçsíÜÇÃã∆ñ±"
 }
 
 browser(url)
