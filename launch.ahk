@@ -25,6 +25,8 @@ thunderbird
 winword
 workplace
 nas
+gdrive
+scanner
 )
 
 ;
@@ -50,6 +52,10 @@ applaunch(keyword)
 	Run explore c:\Users\chojyu1805/Desktop/workplace
     Else If keyword = nas
 	Run explore "\\192.168.0.114\êiçsíÜÇÃã∆ñ±"
+    Else If keyword = gdrive
+	Run explore "C:\Users\matsuda\Google Drive"
+    Else If keyword = scanner
+	Run explore C:\Users\matsuda\Desktop\cloud\scanner
 }
 
 browser(url)
