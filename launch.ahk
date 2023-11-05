@@ -39,7 +39,7 @@ applaunch(keyword)
     Else If keyword = chrome
     	Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
     Else If keyword = bash
-	Run c:\Users\matsuda\AppData\Local\wsltty\bin\mintty.exe --WSL="Ubuntu" --configdir="c:\Users\matsuda\AppData\Roaming\wsltty" -~
+	Run wsl.exe --cd "~"
     Else If keyword = excel
         Run %A_ProgramFiles%\Microsoft Office\root\office16\EXCEL.EXE
     Else If keyword = explorer
